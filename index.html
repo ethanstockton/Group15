@@ -34,7 +34,7 @@
             background-color: rgb(0, 0, 0);
             opacity: 1;
 
-            transition: 1.5s;
+            transition: 1s;
         }
 
         .splash2 {
@@ -142,13 +142,13 @@
     }
 
     function SplashScreenLoadIN() {
-        document.getElementById("splashscreenParent").style.opacity = 1
+        document.getElementById("splashscreenParent").style.opacity = 1;
         setTimeout(SplashScreenLoadOut, 3000);
     }
 
     function SplashScreenLoadOut() {
-        document.getElementById("splashscreenParent").style.opacity = 0
-        setTimeout(SplashScreenDisable, 3000);
+        document.getElementById("splashscreenParent").style.opacity = 0;
+        setTimeout(SplashScreenDisable, 1000);
     }
     //makes the element invisible, and moves it off screen so that the other pages can be seen
     function SplashScreenDisable() {
@@ -157,7 +157,7 @@
 
         document.getElementById("splashscreenParent").style.transition = 5;
 
-        document.getElementById("splashscreenParent").style.left = parseInt(document.getElementById("splashscreenParent").style.left) - 100 + '%';
+        document.getElementById("splashscreenParent").style.left = - 100 + '%';
 
 
     }
